@@ -1,0 +1,706 @@
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('./fonts/Vollkorn-regular/Vollkorn-regular.eot');
+  src: url('./fonts/Vollkorn-regular/Vollkorn-regular.eot?#iefix') format('embedded-opentype'),
+       local('Vollkorn Regular'),
+       local('Vollkorn-regular'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.woff2') format('woff2'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.woff') format('woff'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.ttf') format('truetype'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.svg#Vollkorn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crete Round';
+  src: url('./fonts/Crete-Round-regular/Crete-Round-regular.eot');
+  src: url('./fonts/Crete-Round-regular/Crete-Round-regular.eot?#iefix') format('embedded-opentype'),
+       local('Crete Round Regular'),
+       local('Vollkorn-Round-regular'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.woff2') format('woff2'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.woff') format('woff'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.ttf') format('truetype'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.svg#CreteRound') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ma Shan Zheng';	
+  src: url('./fonts/Ma_Shan_Zheng/MaShanZheng-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zhi Mang Xing';	
+  src: url('./fonts/Zhi_Mang_Xing/ZhiMangXing-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url('./background.jpg'); 
+  background-repeat: repeat; 
+  background-color: #404040; 
+  font-family: 'Vollkorn', 'Crete Round', serif;
+  font-size: 15px; 
+} 
+
+a.mylink:link {color:#000000; text-decoration:none;}
+a.mylink:visited {color:#000000; text-decoration:none;}
+a.mylink:active {color:#000000; text-decoration:none;}
+a.mylink:hover {color:#888888; text-decoration:underline;}
+
+
+p.style2text {
+  line-height: 150%; 
+  font-size: 13px; 
+  font-weight: 600;
+  color: #2F4F4F; 
+}
+
+.myitalic{
+  font-style: italic;
+}
+
+.mybold {
+   font-weight: bold;
+}
+
+.mychinese {
+	font-family: "Arial", "Microsoft Yahei", "blackbody", "Arial", sans-serif;
+}
+
+.myenglish {
+	font-family: 'Vollkorn', 'Crete Round', serif;
+}
+.all {
+  margin: auto;
+  position: relative;
+  width: 750px;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  height: 82px;
+  border: 0px;  
+}
+
+.separator-1 {
+  position: absolute;
+  top: 113px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-2 {
+  position: absolute;
+  top: 129px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  background: #000000;
+  border: 0px;
+}
+
+/*
+XXXXXX  Menu  XXXXXX
+*/
+
+.menu{
+  position: absolute;
+  top: 142px;
+  left: 0px;
+  width: 750px;
+  height: 47px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 744px;
+  height: 45px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-2 {
+  position: absolute;
+  top: 1px;
+  left: 152px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 1px;
+  left: 301px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 1px;
+  left: 450px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px;
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: absolute;
+  top: 1px;
+  left: 599px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 151px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: absolute;
+  top: 0px;
+  left: 449px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-4 {
+  position: absolute;
+  top: 0px;
+  left: 598px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-l {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-r {
+  position: absolute;
+  top: 0px;
+  left: 747px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-t {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-b {
+  position: absolute;
+  top: 46px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/*
+XXXXXX  Menu End XXXXXX
+*/
+
+.separator-3 {
+  position: absolute;
+  top: 192px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: absolute;
+  top: 208px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  border: 0px;
+  background: #000000;
+}
+
+/*
+XXXXXX  Kalimba  XXXXXX
+*/
+
+/* Adjust height value X */
+
+.kalimba-main {
+  position: absolute;
+  top: 221px;
+  left: 0px;
+  width: 750px;
+  height: 730px;
+  color: #000000;
+  border: 0px;
+}
+
+/* Adjust height value X-2 */
+
+.kalimba-main-bg {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 744px;
+  height: 728px;  
+  background: #FFFFFF url('./symphony.png');  
+  border: 0px;  
+}
+
+/* Adjust height value X-10 */
+
+.kalimba-main-contents {
+  position: absolute;
+  top: 10px;
+  left: 50px;  
+  width: 650px;
+  height: 720px;
+  border: 0px; 
+}
+
+.kalimbaimage {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  width: 200px;
+  height: 259px;
+  border: 0px;  
+} 
+
+/* Adjust height value X */
+
+.kalimba-main-border-l {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 1px;
+  height: 730px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/* Adjust height value X */
+
+.kalimba-main-border-r {
+  position: absolute;
+  top: 0px;
+  left: 747px;
+  width: 1px;
+  height: 730px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.kalimba-main-border-t {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/* Adjust top value X-1 */
+
+.kalimba-main-border-b {
+  position: absolute;
+  top: 729px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/* Adjust top value X+224 */
+
+.kalimba-copyright {
+  position: absolute;
+  top: 954px;
+  left: 0px;
+  width: 750px;
+  height: 30px;
+  line-height: 30px;
+  background: #000000;
+  border: 0px;
+  color: #FFFFFF;
+  text-align: right;
+  font-size: 13px;
+}
+
+/*
+XXXXXX  Mobile  230 to 550 XXXXXX
+*/
+
+
+@media all and (min-width:230px) and (max-width: 550px) {
+
+ul {
+  list-style-type: none;
+  padding-left:0;
+}
+
+.all {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: 0px; 
+}
+
+.banner img {
+    height: 30px;
+    width: auto;
+}
+
+.separator-1 {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  border: 0px;
+}
+
+.separator-2 {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-2 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: relative;
+  display: none;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 91px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.separator-3 {
+  position: absolute;
+  top: 131px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+/* Adjust height value Y1 */
+
+.kalimba-main {
+  position: absolute;
+  top: 141px;
+  left: 0px;
+  width: 100%;
+  height: 710px;
+}
+
+/* Adjust height value Y1 */
+
+.kalimba-main-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 710px;  
+  background: #FFFFFF url('./symphony.png'); 
+}
+
+.kalimba-main-contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.kalimbaimage {
+  position: relative;
+  margin: auto;
+  height: 259px;  
+}
+
+.kalimba-main-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.kalimba-main-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.kalimba-main-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.kalimba-main-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;   
+}
+
+/* Adjust height value Y1+141 */
+
+.kalimba-copyright {
+  position: absolute;
+  top: 851px;
+  left:0px;
+  width: 100%;
+  height: 20px;  
+  line-height: 20px; 
+  font-size: 10px;
+}
+
+
+}

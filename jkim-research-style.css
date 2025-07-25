@@ -1,0 +1,1818 @@
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('./fonts/Vollkorn-regular/Vollkorn-regular.eot');
+  src: url('./fonts/Vollkorn-regular/Vollkorn-regular.eot?#iefix') format('embedded-opentype'),
+       local('Vollkorn Regular'),
+       local('Vollkorn-regular'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.woff2') format('woff2'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.woff') format('woff'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.ttf') format('truetype'),
+       url('./fonts/Vollkorn-regular/Vollkorn-regular.svg#Vollkorn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crete Round';
+  src: url('./fonts/Crete-Round-regular/Crete-Round-regular.eot');
+  src: url('./fonts/Crete-Round-regular/Crete-Round-regular.eot?#iefix') format('embedded-opentype'),
+       local('Crete Round Regular'),
+       local('Vollkorn-Round-regular'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.woff2') format('woff2'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.woff') format('woff'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.ttf') format('truetype'),
+       url('./fonts/Crete-Round-regular/Crete-Round-regular.svg#CreteRound') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url('./background.jpg'); 
+  background-repeat: repeat; 
+  background-color: #404040; 
+  font-family: 'Vollkorn', 'Crete Round', serif;
+  font-size: 15px; 
+} 
+
+a.mylink:link {color:#000000; text-decoration:none;}
+a.mylink:visited {color:#000000; text-decoration:none;}
+a.mylink:active {color:#000000; text-decoration:none;}
+a.mylink:hover {color:#888888; text-decoration:underline;}
+
+
+p.style2text {
+  line-height: 150%; 
+  font-size: 13px; 
+  font-weight: 600;
+  color: #2F4F4F; 
+}
+
+.myitalic{
+  font-style: italic;
+}
+
+.mybold {
+   font-weight: bold;
+}
+
+.all {
+  margin: auto;
+  position: relative;
+  width: 750px;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  height: 82px;
+  border: 0px;  
+}
+
+.separator-1 {
+  position: absolute;
+  top: 113px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-2 {
+  position: absolute;
+  top: 129px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  background: #000000;
+  border: 0px;
+}
+
+/*
+XXXXXX  Menu  XXXXXX
+*/
+
+.menu{
+  position: absolute;
+  top: 142px;
+  left: 0px;
+  width: 750px;
+  height: 47px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 744px;
+  height: 45px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-2 {
+  position: absolute;
+  top: 1px;
+  left: 152px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 1px;
+  left: 301px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 1px;
+  left: 450px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px;
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: absolute;
+  top: 1px;
+  left: 599px;
+  width: 148px;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 151px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: absolute;
+  top: 0px;
+  left: 449px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-4 {
+  position: absolute;
+  top: 0px;
+  left: 598px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-l {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-r {
+  position: absolute;
+  top: 0px;
+  left: 747px;
+  width: 1px;
+  height: 47px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-t {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-border-b {
+  position: absolute;
+  top: 46px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/*
+XXXXXX  Menu End XXXXXX
+*/
+
+.separator-3 {
+  position: absolute;
+  top: 192px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: absolute;
+  top: 208px;
+  left: 0px;
+  width: 750px;
+  height: 10px;
+  border: 0px;
+  background: #000000;
+}
+
+/*
+XXXXXX  Research  XXXXXX
+*/
+
+/* Adjust height value X */
+
+.research-main {
+  position: absolute;
+  top: 221px;
+  left: 0px;
+  width: 750px;
+  height: 1700px;
+  color: #000000;
+  border: 0px;
+}
+
+/* Adjust height value x-2 */
+
+.research-main-bg {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 744px;
+  height: 1698px;  
+  background: #FFFFFF url('./symphony.png');  
+  border: 0px;  
+}
+
+/* Adjust height value X-10 */
+
+.research-main-contents {
+  position: absolute;
+  top: 10px;
+  left: 50px;  
+  width: 650px;
+  height: 1690px;
+  border: 0px; 
+}
+
+.researchimage {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  width: 259px;
+  height: 198px;
+  border: 0px;  
+}
+
+/* Adjust height value X */
+
+.research-main-border-l {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 1px;
+  height: 1700px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/* Adjust height value X */
+
+.research-main-border-r {
+  position: absolute;
+  top: 0px;
+  left: 747px;
+  width: 1px;
+  height: 1700px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.research-main-border-t {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/* Adjust top value X-1 */
+
+.research-main-border-b {
+  position: absolute;
+  top: 1699px;
+  left: 2px;
+  width: 746px;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+/* Adjust top value X+224 */
+
+.research-copyright {
+  position: absolute;
+  top: 1924px;
+  left: 0px;
+  width: 750px;
+  height: 30px;
+  line-height: 30px;
+  background: #000000;
+  border: 0px;
+  color: #FFFFFF;
+  text-align: right;
+  font-size: 13px;
+}
+
+/*
+XXXXXX  Mobile 470 to 550  XXXXXX
+*/
+
+
+@media all and (min-width:470px) and (max-width: 550px) {
+
+.all {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: 0px; 
+}
+
+.banner img {
+    height: 30px;
+    width: auto;
+}
+
+.separator-1 {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  border: 0px;
+}
+
+.separator-2 {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+
+.menu-2 {
+  position: relative;
+  display: none;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 91px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.separator-3 {
+  position: absolute;
+  top: 131px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+/* Adjust height value Y1 */
+
+.research-main {
+  position: absolute;
+  top: 141px;
+  left: 0px;
+  width: 100%;
+  height: 2000px;
+}
+
+/* Adjust height value Y1 */
+
+.research-main-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2000px;  
+  background: #FFFFFF url('./symphony.png'); 
+}
+
+.research-main-contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.researchimage {
+  position: relative;
+  margin: auto;
+  height: 198px;  
+}
+
+.research-main-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;   
+}
+
+/* Adjust top value Y1+141 */
+
+.research-copyright {
+  position: absolute;
+  top: 2141px;
+  left:0px;
+  width: 100%;
+  height: 20px;  
+  line-height: 20px; 
+  font-size: 10px;
+}
+
+
+}
+
+
+/*
+XXXXXX  Mobile 400 to 469  XXXXXX
+*/
+
+
+@media all and (min-width:400px) and (max-width: 469px) {
+
+.all {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: 0px; 
+}
+
+.banner img {
+    height: 30px;
+    width: auto;
+}
+
+.separator-1 {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  border: 0px;
+}
+
+.separator-2 {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+
+.menu-2 {
+  position: relative;
+  display: none;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 91px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.separator-3 {
+  position: absolute;
+  top: 131px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+/* Adjust height value Y2 */
+
+.research-main {
+  position: absolute;
+  top: 141px;
+  left: 0px;
+  width: 100%;
+  height: 2100px;
+}
+
+/* Adjust height value Y2 */
+
+.research-main-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2100px;  
+  background: #FFFFFF url('./symphony.png'); 
+}
+
+.research-main-contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.researchimage {
+  position: relative;
+  margin: auto;
+  height: 198px;  
+}
+
+.research-main-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;   
+}
+
+/* Adjust top value Y2+141 */
+
+.research-copyright {
+  position: absolute;
+  top: 2241px;
+  left:0px;
+  width: 100%;
+  height: 20px;  
+  line-height: 20px; 
+  font-size: 10px;
+}
+
+
+}
+
+
+/*
+XXXXXX  Mobile 350 to 399  XXXXXX
+*/
+
+
+@media all and (min-width:350px) and (max-width: 399px) {
+
+.all {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: 0px; 
+}
+
+.banner img {
+    height: 30px;
+    width: auto;
+}
+
+.separator-1 {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  border: 0px;
+}
+
+.separator-2 {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+
+.menu-2 {
+  position: relative;
+  display: none;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 91px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.separator-3 {
+  position: absolute;
+  top: 131px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+/* Adjust height value Y3 */
+
+.research-main {
+  position: absolute;
+  top: 141px;
+  left: 0px;
+  width: 100%;
+  height: 2200px;
+}
+
+/* Adjust height value Y3 */
+
+.research-main-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2200px;  
+  background: #FFFFFF url('./symphony.png'); 
+}
+
+.research-main-contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.researchimage {
+  position: relative;
+  margin: auto;
+  height: 198px;  
+}
+
+.research-main-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;   
+}
+
+/* Adjust top value Y3+141 */
+
+.research-copyright {
+  position: absolute;
+  top: 2341px;
+  left:0px;
+  width: 100%;
+  height: 20px;  
+  line-height: 20px; 
+  font-size: 10px;
+}
+
+
+}
+
+
+
+/*
+XXXXXX  Mobile 310 to 349  XXXXXX
+*/
+
+
+@media all and (min-width:310px) and (max-width: 349px) {
+
+.all {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: 0px; 
+}
+
+.banner img {
+    height: 30px;
+    width: auto;
+}
+
+.separator-1 {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  border: 0px;
+}
+
+.separator-2 {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+
+.menu-2 {
+  position: relative;
+  display: none;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 91px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.separator-3 {
+  position: absolute;
+  top: 131px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+/* Adjust height value Y4 */
+
+.research-main {
+  position: absolute;
+  top: 141px;
+  left: 0px;
+  width: 100%;
+  height: 2400px;
+}
+
+/* Adjust height value Y4 */
+
+.research-main-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2400px;  
+  background: #FFFFFF url('./symphony.png'); 
+}
+
+.research-main-contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.researchimage {
+  position: relative;
+  margin: auto;
+  height: 198px;  
+}
+
+.research-main-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;   
+}
+
+/* Adjust top value Y4+141 */
+
+.research-copyright {
+  position: absolute;
+  top: 2541px;
+  left:0px;
+  width: 100%;
+  height: 20px;  
+  line-height: 20px; 
+  font-size: 10px;
+}
+
+
+}
+
+/*
+XXXXXX  Mobile 230 to 309  XXXXXX
+*/
+
+
+@media all and (min-width:230px) and (max-width: 309px) {
+
+.all {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: 0px; 
+}
+
+.banner img {
+    height: 30px;
+    width: auto;
+}
+
+.separator-1 {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  border: 0px;
+}
+
+.separator-2 {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  border: 0px;
+  color: #434A54;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 91px;
+  background: #FFFFFF url('./whitewall.png');
+  border: 0px;
+}
+
+.menu-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;  
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+
+.menu-2 {
+  position: relative;
+  display: none;
+}
+
+.menu-3 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-4 {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px; 
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-5 {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border: 0px;
+  font-family: 'Crete Round', serif; 
+  font-size: 13px; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.menu-separator-1 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 91px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-2 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #434A54;
+  border: 0px;  
+}
+
+.menu-separator-3 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.menu-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.separator-3 {
+  position: absolute;
+  top: 131px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #000000;
+  border: 0px;    
+}
+
+.separator-4 {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+/* Adjust height value Y5 */
+
+.research-main {
+  position: absolute;
+  top: 141px;
+  left: 0px;
+  width: 100%;
+  height: 2800px;
+}
+
+/* Adjust height value Y5 */
+
+.research-main-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2800px;  
+  background: #FFFFFF url('./symphony.png'); 
+}
+
+.research-main-contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.researchimage {
+  position: relative;
+  margin: auto;
+  height: 198px; 
+}
+
+.research-main-border-l {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-r {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-t {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;  
+}
+
+.research-main-border-b {
+  position: relative;
+  display: none; 
+  width: 0px;
+  height: 0px;   
+}
+
+/* Adjust top value Y5+141 */
+
+.research-copyright {
+  position: absolute;
+  top: 2941px;
+  left:0px;
+  width: 100%;
+  height: 20px;  
+  line-height: 20px; 
+  font-size: 10px;
+}
+
+
+}
