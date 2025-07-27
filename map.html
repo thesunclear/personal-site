@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Jaehong Kim - Map</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="description" content="Jaehong Kim, Ph.D. in Economics, Ph.D. in Mathematics" />
+  <meta name="keywords" content="Jaehong Kim, PhD, Economics, Mathematics, Map, Purdue, WISE, Xiamen" />
+  <meta name="author" content="Jaehong Kim" />
+  
+  <link rel="Shortcut Icon" href="./favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./jkim-map-style.css" />
+  <link rel="stylesheet" type="text/css" href="map/jquery-jvectormap.css"/>
+
+  <script src="map/jquery-1.8.2.js" type="text/javascript"></script>
+  <script src="map/jquery-jvectormap.js" type="text/javascript"></script>
+  <script src="map/jquery-mousewheel.js" type="text/javascript"></script>
+
+  <script src="map/jvectormap.js" type="text/javascript"></script>
+
+  <script src="map/abstract-element.js" type="text/javascript"></script>
+  <script src="map/abstract-canvas-element.js" type="text/javascript"></script>
+  <script src="map/abstract-shape-element.js" type="text/javascript"></script>
+
+  <script src="map/svg-element.js" type="text/javascript"></script>
+  <script src="map/svg-group-element.js" type="text/javascript"></script>
+  <script src="map/svg-canvas-element.js" type="text/javascript"></script>
+  <script src="map/svg-shape-element.js" type="text/javascript"></script>
+  <script src="map/svg-path-element.js" type="text/javascript"></script>
+  <script src="map/svg-circle-element.js" type="text/javascript"></script>
+  <script src="map/svg-image-element.js" type="text/javascript"></script>
+  <script src="map/svg-text-element.js" type="text/javascript"></script>
+
+  <script src="map/vml-element.js" type="text/javascript"></script>
+  <script src="map/vml-group-element.js" type="text/javascript"></script>
+  <script src="map/vml-canvas-element.js" type="text/javascript"></script>
+  <script src="map/vml-shape-element.js" type="text/javascript"></script>
+  <script src="map/vml-path-element.js" type="text/javascript"></script>
+  <script src="map/vml-circle-element.js" type="text/javascript"></script>
+  <script src="map/vml-image-element.js" type="text/javascript"></script>
+
+  <script src="map/map-object.js" type="text/javascript"></script>
+  <script src="map/region.js" type="text/javascript"></script>
+  <script src="map/marker.js" type="text/javascript"></script>
+
+  <script src="map/vector-canvas.js" type="text/javascript"></script>
+  <script src="map/simple-scale.js" type="text/javascript"></script>
+  <script src="map/ordinal-scale.js" type="text/javascript"></script>
+  <script src="map/numeric-scale.js" type="text/javascript"></script>
+  <script src="map/color-scale.js" type="text/javascript"></script>
+  <script src="map/legend.js" type="text/javascript"></script>
+  <script src="map/data-series.js" type="text/javascript"></script>
+  <script src="map/proj.js" type="text/javascript"></script>
+  <script src="map/map.js" type="text/javascript"></script>
+
+  <script src="map/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery.noConflict();
+    jQuery(function(){
+      var $ = jQuery;
+
+      $('#button1').click(function(){
+        $('#map1').vectorMap('set', 'focus', {region: 'KR', animate: true});
+      });
+      $('#button2').click(function(){
+        $('#map1').vectorMap('set', 'focus', {scale: 6, lat: 37, lng: -96, animate: true});
+      });
+      $('#button3').click(function(){
+        $('#map1').vectorMap('set', 'focus', {region: 'CH', animate: true});
+      });
+      $('#button4').click(function(){
+        $('#map1').vectorMap('set', 'focus', {region: 'CN', animate: true});
+      });	  
+      $('#button5').click(function(){
+        $('#map1').vectorMap('set', 'focus', {scale: 1, x: 0.5, y: 0.5, animate: true});
+      });
+      $('#map1').vectorMap({
+        map: 'world_mill_en',
+        panOnDrag: true,
+        focusOn: {
+          x: 0.5,
+          y: 0.5,
+          scale: 1,
+          animate: true
+        },
+		 markerStyle: {
+      initial: {
+        fill: '#FF0000',
+        stroke: '#383f47'
+      }
+    },
+    backgroundColor: '#797D7F',
+    markers: [
+      {latLng: [37.57, 126.98], name: 'Sogang University, B.S. in Math (2000)'},
+      {latLng: [42.05, -87.69], name: 'Northwestern University, Exchange program (2012)'},
+      {latLng: [40.43, -86.91], name: 'Purdue University, Ph.D. in Math (2008), Ph.D. in Econ (2014)'},
+      {latLng: [47.56, 7.59], name: 'University of Basel, Researcher (2012-2014)'},
+      {latLng: [33.79, -117.85], name: 'Chapman University, Post-doctoral researcher (2014-2016)'},
+      {latLng: [24.48, 118.09], name: 'Xiamen University, Associate professor (2016-)'}
+    ],
+      series: {regions: [{
+        scale: {
+          red: '#ff0000',
+          green: '#00ff00'
+        },
+        attribute: 'fill',
+        values: {
+          "AT": 'green',
+          "BE": 'green',
+          "BG": 'green',
+		  "CA": 'green',
+		  "CN": 'green',
+		  "DK": 'green',
+          "FI": 'green',
+		  "FR": 'green',
+		  "DE": 'green',
+		  "GR": 'green',
+		  "HU": 'green',
+		  "IE": 'green',
+		  "IT": 'green',
+		  "LU": 'green',
+		  "MA": 'green',
+		  "NL": 'green',
+		  "NO": 'green',
+		  "PH": 'green',
+		  "RO": 'green',
+		  "KR": 'green',
+		  "ES": 'green',
+		  "SE": 'green',
+		  "CH": 'green',
+		  "TR": 'green',
+		  "GB": 'green',
+		  "US": 'green',
+        },
+        legend: {
+          horizontal: true,
+          title: 'Color'
+        }
+      }]
+	  }
+      });
+    })
+  </script>
+	
+ </head>
+ <body>
+ <div class="all">
+ 
+   <div class="banner">
+   <img src="./JaehongKimLogo.png" alt="Jaehong Kim" />
+   </div>
+   
+   <div class="separator-1">
+   </div>
+   
+   <div class="separator-2">
+   </div>
+   
+   <div class="menu">
+   
+       <div class="menu-bg"></div>
+	   
+       <div class="menu-1" onmouseover="this.style.backgroundColor='#ff0000', this.style.color='#ffffff'" onmouseout="this.style.backgroundColor='transparent', this.style.color='#434a54'" onclick="window.location='./index.html'">
+       ABOUT ME
+       </div>   
+	   
+       <div class="menu-2" onmouseover="this.style.backgroundColor='#ffdf00', this.style.color='#ffffff'" onmouseout="this.style.backgroundColor='transparent', this.style.color='#434a54'" onclick="window.location='./research.html'">
+       RESEARCH
+       </div>
+	   
+       <div class="menu-3" onmouseover="this.style.backgroundColor='#00a000', this.style.color='#ffffff'" onmouseout="this.style.backgroundColor='transparent', this.style.color='#434a54'" onclick="window.location='./teaching.html'">
+       TEACHING
+       </div>   
+	   
+       <div class="menu-4" onmouseover="this.style.backgroundColor='#0000ff', this.style.color='#ffffff'" onmouseout="this.style.backgroundColor='transparent', this.style.color='#434a54'" onclick="window.location='./cv.html'">
+       CURRICULUM VITAE
+       </div> 
+	   
+       <div class="menu-5" onmouseover="this.style.backgroundColor='#600060', this.style.color='#ffffff'" onmouseout="this.style.backgroundColor='transparent', this.style.color='#434a54'" onclick="window.location='./map.html'">
+       WORLD MAP
+       </div>  
+	   
+       <div class="menu-separator-1"></div>
+       <div class="menu-separator-2"></div>
+       <div class="menu-separator-3"></div>
+       <div class="menu-separator-4"></div>
+       <div class="menu-border-l"></div>
+       <div class="menu-border-r"></div>
+       <div class="menu-border-t"></div>
+       <div class="menu-border-b"></div>
+	   
+   </div>
+
+   <div class="separator-3">
+   </div>
+   
+   <div class="separator-4">
+   </div> 
+   
+   
+   <div class="map-main">
+   
+       <div class="map-main-bg"></div>
+	   
+       <div class="map-main-contents">
+
+
+   	       <h3>Research and Work Experience</h3> 
+		   
+<!-- Map form -->
+
+  <div class="my-map">
+  <div id="map1"></div>
+  <button id="button1" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#434a54'">Korea</button>
+  <button id="button2" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#434a54'">USA</button>
+  <button id="button3" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#434a54'">Switzerland</button>
+  <button id="button4" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#434a54'">China</button>  
+  <button id="button5" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#434a54'">WORLD</button>
+  </div>
+
+
+	
+<!-- Map form end -->
+
+ 
+       </div>
+
+       <div class="map-main-border-l"></div>
+       <div class="map-main-border-r"></div>
+       <div class="map-main-border-t"></div>
+       <div class="map-main-border-b"></div>	   
+   
+   </div>   
+
+   <div class="map-copyright">
+   2015 &ndash; 2020 Jaehong.Kim All rights reserved &nbsp;
+   </div>   
+
+   
+</div> 
+</body>
+</html>
