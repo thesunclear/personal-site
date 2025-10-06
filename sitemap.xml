@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url> 
+    <loc>https://www.jaehong.kim/index.html</loc> 
+  </url>
+  <url>
+    <loc>https://www.jaehong.kim/research.html</loc> 
+  </url>
+  <url>
+    <loc>https://www.jaehong.kim/teaching.html</loc> 
+  </url>
+  <url>
+    <loc>https://www.jaehong.kim/cv.html</loc> 
+  </url>
+  <url>
+    <loc>https://www.jaehong.kim/link.html</loc> 
+  </url>
+  <url>
+    <loc>https://clock.jaehong.kim/</loc> 
+  </url>  
+  <url>
+    <loc>https://wordle.jaehong.kim/</loc> 
+  </url>    
+</urlset>
