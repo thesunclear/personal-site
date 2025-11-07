@@ -1,5 +1,0 @@
-Sitemap: http://www.jaehong.kim/sitemap.xml
-
-User-agent: *
-Disallow: /php/
-Disallow: /maps/
